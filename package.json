@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "It is a personal practice project. It is MERN stack base YouTube clone project",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "keywords": [
     "node.j",
@@ -15,5 +16,10 @@
   "devDependencies": {
     "nodemon": "^3.1.0",
     "pettier": "^1.1.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.3.0"
   }
 }
